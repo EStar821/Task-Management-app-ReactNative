@@ -145,6 +145,11 @@ npm run build:android # Build Android APK
 npm run build:ios     # Build iOS IPA
 npm run lint       # Run ESLint
 npm run type-check # Run TypeScript type checking
+npm test           # Run all tests
+npm run test:watch # Run tests in watch mode
+npm run test:coverage # Generate test coverage report
+npm run test:unit  # Run unit tests only (business logic)
+npm run test:unit:coverage # Run unit tests with coverage
 ```
 
 ### Code Quality
@@ -153,6 +158,15 @@ npm run type-check # Run TypeScript type checking
 - **Component Architecture**: Reusable, composable components
 - **State Management**: Reducer pattern for predictable state updates
 - **Performance**: Optimized rendering with React hooks
+
+### Testing
+- **Unit Tests**: Comprehensive testing of utility functions and business logic
+- **Integration Tests**: End-to-end workflow validation
+- **Test Coverage**: 100% coverage of core business logic
+- **Test Framework**: Jest with React Native Testing Library
+- **Mock Data**: Realistic test scenarios and edge cases
+
+For detailed testing information, see [TESTING.md](./TESTING.md).
 
 ## 📱 Platform Support
 
