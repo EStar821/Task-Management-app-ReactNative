@@ -1,0 +1,47 @@
+/* Remove default focus outlines for web */
+input:focus,
+textarea:focus,
+select:focus,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+input:focus-within,
+textarea:focus-within,
+select:focus-within {
+  outline: none !important;
+  outline-style: none !important;
+  outline-width: 0 !important;
+  outline-offset: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Remove any browser-specific focus indicators */
+*:focus,
+*:focus-visible,
+*:focus-within {
+  outline: none !important;
+  outline-style: none !important;
+  outline-width: 0 !important;
+  outline-offset: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Specific targeting for React Native Web TextInput */
+[data-testid="text-input"],
+[class*="TextInput"],
+input[type="text"],
+input[type="search"],
+textarea {
+  outline: none !important;
+  outline-style: none !important;
+  outline-width: 0 !important;
+  outline-offset: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Ensure clean focus styling */
+input:focus,
+textarea:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
